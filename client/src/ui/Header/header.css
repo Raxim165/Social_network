@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  gap: 50px;
+  background-color: #141313;
+  /* justify-content: space-between */
+  padding: 15px 40px;
+}
+
+.input-search {
+  /* margin-right: 40px; */
+}

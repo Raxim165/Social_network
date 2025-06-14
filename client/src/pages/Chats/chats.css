@@ -1,0 +1,36 @@
+.chats {
+  display: flex;
+  background-color: #505050;
+  /* border: 3px solid green; */
+  /* flex-direction: column; */
+    height: calc(100vh - 60px);
+}
+
+.chats-list {
+  width: 300px;
+  background-color: #2a2a2a;
+  /* border: 3px solid red */
+}
+
+.chat-link {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 25px;
+  color: #fff;
+  font-size: 25px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.chat-link:hover {
+  background-color: #4a4a4a;
+}
+
+.chat-link:active {
+  background-color: #3a3a3a;
+}
+
+.chat-link:focus {
+  color: rgb(137, 181, 231);
+  /* box-shadow: 0 0 5px rgb(137, 181, 231); */
+}

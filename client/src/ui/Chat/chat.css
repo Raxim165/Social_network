@@ -1,0 +1,109 @@
+.chat {
+  position: relative;
+  /* height: 100%;
+  overflow-y: auto; */
+}
+
+.status {
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+  border-bottom: 1px solid #fff;
+  position: absolute;
+  width: 100%;
+}
+
+.chat-messages-wrapper {
+  height: calc(100vh - 60px);
+  padding-top: 60px;
+}
+
+.chat-messages {
+  height: 100%;
+  overflow-y: scroll;
+  padding-bottom: 50px;
+}
+
+.message-wrapper {
+  padding: 0 10px;
+}
+
+.message {
+  display: inline-block;
+  margin-bottom: 7px;
+  background-color: rgb(3, 78, 175);
+  border-radius: 10px;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.chat-form {
+  background-color: #505050;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.chat-form > input {
+  padding: 10px 15px;
+  font-size: 22px;
+}
+
+.chat-form > button {
+  padding: 10px 15px;
+  font-size: 22px;
+  background-color: rgb(20, 132, 21);
+  color: #fff
+}
+
+.chat-form > button:hover {
+  background-color: rgb(39, 167, 41);
+}
+
+
+
+.dots-container {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.dots-container span {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: currentColor;
+  border-radius: 50%;
+  animation-name: dotsAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  transform-origin: bottom center;
+}
+
+.dots-container span:nth-child(1) {
+  animation-delay: 0ms;
+  margin-right: 3px;
+}
+
+.dots-container span:nth-child(2) {
+  animation-delay: 200ms;
+  margin-right: 3px;
+}
+
+.dots-container span:nth-child(3) {
+  animation-delay: 400ms;
+}
+
+@keyframes dotsAnimation {
+  0%, 100% {
+    opacity: 0.5;
+    transform: translateY(-5px); /* точка прыгает вверх */
+  }
+  50% {
+    opacity: 1;
+    transform: none; /* точка возвращается назад */
+  }
+}
